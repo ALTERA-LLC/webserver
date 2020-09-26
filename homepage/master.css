@@ -1,0 +1,116 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 72px;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    background-color: white;
+}
+
+.sam {
+    animation: 0.5s ease scaling infinite alternate;
+    margin: 0 10% 0 10%;
+}
+
+.s2 {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes scaling {
+    from {
+        transform: scale(1, 0.3) rotate(5deg);
+    }
+    to {
+        transform: scale(0.5, 0.5) rotate(-5deg);
+    }
+}
+
+@keyframes colourcycle {
+    0% {
+        background-color: red;
+    }
+    14% {
+        background-color: orange;
+    }
+    29% {
+        background-color: yellow;
+    }
+    43% {
+        background-color: green;
+    }
+    57% {
+        background-color: blue;
+    }
+    71% {
+        background-color: indigo;
+    }
+    86% {
+        background-color: violet;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+div.center {
+    margin: 0 auto;
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.flex-container li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 1em 0 1em;
+}
+
+a.navi-link {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+}
+
+body {
+    margin: 2em;
+    background-color: red;
+    border: 0.3em solid black;
+    border-radius: 1em;
+    animation: 10s infinite colourcycle ease-in;
+    box-shadow: 0 0 1em 0.5em white;
+}
+
+html {
+    animation: 10s infinite reverse colourcycle ease-in;
+}
+
+body, html {
+    height: 95%;
+}
+
+.welcome {
+    letter-spacing: 1em;
+    margin: 0;
+    line-height: 2em;
+}
+
+.sam-container {
+    max-height: 100%;
+    margin: 0;
+    position: relative;
+    top: -10%;
+}

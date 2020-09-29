@@ -1,5 +1,5 @@
 <?php
-$target_dir = "/home/website/files/ALTERA/CLOUD/Files/";
+$target_dir = "../Files/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

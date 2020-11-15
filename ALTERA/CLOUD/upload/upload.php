@@ -17,7 +17,7 @@
     if (isset($_POST['submit'])) {
 
       if (empty($errors)) {
-        $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
+        $didUpload = move_uploaded_file($_FILES["file"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . 'Files/' . $_FILES["file"]["name"]);
 
         if ($didUpload) {
           echo "The file " . basename($fileName) . " has been uploaded";
